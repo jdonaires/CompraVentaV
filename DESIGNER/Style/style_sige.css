@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body{
+	margin: 0 auto;
+	background: #fff;
+}
+.container{
+	background: #fff;/*#0C8592*/
+}
+.wrapper{
+	background-color: #0C8592 ; /*3F3B3B*/
+}
+.letras{
+	font-family: comic;
+}
+
+.boton_1{
+	text-decoration: none;
+	padding: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: comic;
+	font-weight: 300;
+	font-size: 20px;
+	color: #3F3E3E;
+	border-radius: 10px;
+	border: px double #3F3E3E;
+}
+.boton_1:hover{
+	opacity: 0.5;
+	text-decoration: none;
+}
