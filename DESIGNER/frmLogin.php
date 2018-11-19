@@ -1,3 +1,26 @@
+<?php
+require_once ('../DAO/ValidacionLogin.php');
+require_once ('../BOL/login.php');
+require_once('../BOL/persona.php');
+
+$per = new Persona();
+
+$log = new Login();
+$perLogin = new loginingresar();
+if(isset($_POST['ingresar']))
+{
+  $resultado = array();//VARIABLE TIPO RESULTADO
+  $log->__SET('usuario',          $_POST['usuario']);//ESTABLECEMOS EL VALOR DEL DNI
+  $log->__SET('clave',          $_POST['clave']);//ESTABLECEMOS EL VALOR DEL DNI
+  $resultado = $perLogin->Acceder($log); //CARGAMOS LOS REGISTRO EN EL ARRAY RESULTADO
+  if(!empty($resultado)) //PREGUNTAMOS SI NO ESTA VACIO EL ARRAY
+  {
+      header('location:frmprincipal.php');
+  }else{
+    header('location:frmLogin.php');
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -32,13 +55,14 @@
 						</section>
 						<img src="imagenes/logo.png" width="150" height="150"/>
 						<h3 class="letras">INISIAR SESIÓN</h3>
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post" class="pure-form pure-form-stacked" style="margin-bottom:30px;">
 						<form id="frm" class="form-horizontal" enctype="multipart/form-data">
 							<section class="input-group">
 								<span class="input-group-addon">
 									<i class="fa fa-user fa-fw">
 									</i>
 								</span>
-							<input type="text" name="txtUsuario" id="iusuario" class="form-control" placeholder="Usuario">
+							<input type="text" name="usuario" class="form-control" placeholder="Usuario">
 							<br>
 							</section>
 							<br>
@@ -46,11 +70,12 @@
 								<span class="input-group-addon">
 									<i class="fa fa-key fa-fw"></i>
 								</span>
-								<input type="password" name="txtClave" id="iclave" class="form-control"  placeholder="Clave">
+								<input type="password" name="clave" class="form-control"  placeholder="Clave">
 							</section>
 							<br>
-						 <a href="frmprincipal.html">	<input type="button" value="INGRESAR" id="btnIngresar" class="boton_1"></a>
+							<input type="submit" value="INICIAR SESION" name="ingresar" class="boton_1" ></a>
 						</form>
+            </form>
 					</section>
 				</section>
 			</section>
