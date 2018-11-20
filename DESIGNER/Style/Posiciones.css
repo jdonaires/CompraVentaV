@@ -5,14 +5,24 @@
 }
 .stiloEmpleado{
   position: absolute;
-  top:  240px;
+  top:  260px;
   left: 300px;
 }
 
 .stiloUsuario{
   position: absolute;
-  top:  240px;
-  left: 20px;
+  top:  260px;
+  left: 10px;
+}
+.btn_inicio{
+  position: absolute;
+  top:  -150px;
+  left: 850px;
+}
+.iniciox{
+  position: absolute;
+  top:  17%;
+  left:94.5%;
 }
 
 .General{
