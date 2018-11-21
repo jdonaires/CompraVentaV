@@ -7,13 +7,13 @@
       <link rel="stylesheet" type="text/css" href="Style/Posiciones.css">
       <script type="text/javascript" src="Function/fntion.js"></script>
   </head>
-  <body >
+  <body>
 
   <div id="sidebar" class="sidebar" style="width: 0px;">
     <a href="#" class="boton-cerrar" onclick="ocultar()">X</a>
     <ul class="menu">
         <li><a href="#" >Inicio</a></li>
-        <li><a href="frmRegistroEmpleado.php" >Registro</a></li>
+        <li><a href="frmUsuarioEmpleado.php" >Registro</a></li>
         <li><a href="#" >Ventas</a></li>
         <li><a href="#">Compras</a></li>
         <li><a href="#">Almacen</a></li>
