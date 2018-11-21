@@ -9,14 +9,15 @@
   </head>
   <body>
 
-  <div id="sidebar" class="sidebar" style="width: 0px;">
-    <a href="#" class="boton-cerrar" onclick="ocultar()">X</a>
+  <div id="sidebar" class="sidebar" onmouseover="mostrar()" onmouseout="ocultar()" style="width: 30px;">
+
     <ul class="menu">
-        <li><a href="#" >Inicio</a></li>
-        <li><a href="frmUsuarioEmpleado.php" >Registro</a></li>
-        <li><a href="#" >Ventas</a></li>
-        <li><a href="#">Compras</a></li>
-        <li><a href="#">Almacen</a></li>
+        <li><a href="#" >  Inicio</a></li>
+        <li><a href="frmUsuarioEmpleado.php"> <img src="Imagenes/ejecutivo1.png"  width=30% height=30%  >Registro</a></li>
+        <li><a href="#"><img src="Imagenes/logo.png"  width=30% height=30%  > Ventas</a></li>
+        <li><a href="#"><img src="Imagenes/compras.png"  width=30% height=30%   >Compras</a></li>
+        <li><a href="#"><img src="Imagenes/warehouse.png"  width=30% height=30%   >Almacen</a></li>
+        <li><a href="frmLogin.php"><img src="Imagenes/salir.png"  width=30% height=30%   >Cerrar Sesión</a></li>
     </ul>
   </div>
 
@@ -25,5 +26,6 @@
         <img src="Imagenes/logo.png"  width=30% height=30%  style="border-width: 10px" ></a></p>
 
       <h1><font face= "Comic Sans MS" size="25"> TOMASSA ELECTRICS</font></h1>
-      <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()" style="display: inline;">BIENVENIDO-INGRESAR AL MENU</a><a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()" style="display: none;">Cierra el menu</a>
+      <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()" style="display: inline;">BIENVENIDO-INGRESAR AL MENU</a>
+      <a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()" style="display: none;">Cierra el menu</a>
   </div>

@@ -95,10 +95,9 @@
                 <input type="radio" name="IdSexo" value="3" checked>Sin Especificar
 							</section>
 						</form>
-            <form>
             <input type="submit" value="REGISTRAR" id="btnRegistrar" class="boton_azul" >
             <br><br>
-            <form action="frmprincipal.php">
+            <form action="frmUsuarioEmpleado.php">
              <input type="submit" value="CANCELAR"  class="boton_azul" id="btnCancelar" >
            </form>
 					</section>

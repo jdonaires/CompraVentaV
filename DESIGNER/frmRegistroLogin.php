@@ -67,7 +67,7 @@
             <br>
             <input type="submit" value="REGISTRAR" id="btnRegistrar" class="boton_azul" >
             <br><br>
-            <form action="frmprincipal.php">
+            <form action="frmUsuarioEmpleado.php">
               <input type="submit" value="CANCELAR" id="btnCancelar" class="boton_azul" >
             </form>
 					</section>

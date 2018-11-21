@@ -14,7 +14,7 @@
            height="100" value="ir a la pagina de destino">
     </form>
 
-	   <form id="RedireccionUno" action="kevin por la redireccion">
+	   <form id="RedireccionUno" action="frmRegistroLogin.php">
 		     <input type=image id="uno" src="Imagenes\ejecutivo1.png" width="250"
 			       height="250" value="ir a la pagina de destino">
 		      <table border="0" cellpadding="0" cellspacing="5">
@@ -25,7 +25,7 @@
 
 	   </form>
 
-	  <form id="RedireccionDos"action="kevin por la redireccion">
+	  <form id="RedireccionDos"action="frmRegistroEmpleado.php">
 		    <input type=image id="dos" src="Imagenes\usuario.png" width="250"
 			       height="250" value="ir a la pagina de destino" style="margin-left: 30px">
 	        <table border="0" cellpadding="0" cellspacing="5">
