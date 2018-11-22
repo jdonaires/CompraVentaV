@@ -1,0 +1,34 @@
+.posicion_1{
+  position: absolute;
+  top:  100px;
+  left: 460px;
+}
+.stiloEmpleado{
+  position: absolute;
+  top:  260px;
+  left: 300px;
+}
+
+.stiloUsuario{
+  position: absolute;
+  top:  260px;
+  left: 10px;
+}
+.btn_inicio{
+  position: absolute;
+  top:  -150px;
+  left: 850px;
+}
+.iniciox{
+  position: absolute;
+  top:  17%;
+  left:94.5%;
+}
+
+.General{
+     	position: absolute;
+	    left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+    	-webkit-transform: translate(-50%, -50%);
+}
