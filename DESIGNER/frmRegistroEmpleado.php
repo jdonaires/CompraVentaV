@@ -75,7 +75,16 @@
 							<input type="text"  id="idTelefono" class="form-control" placeholder="Telefono">
 							<br>
 							</section>
+
               <br>
+              <section class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-user fa-fw">
+                  </i>
+                </span>
+              <input type="text"  id="idcorreo" class="form-control" placeholder="Correo">
+            </section>
+            <br>
               <section class="input-group">
 								<span class="input-group-addon">
 									<i class="fa fa-calendar">
@@ -83,6 +92,8 @@
 								</span>
 							<input type="date"  id="idFecha" class="form-control" placeholder="Fecha de Nacimiento">
 							<br>
+
+              
 							</section>
               <br>
               <section class="input-group">
@@ -96,13 +107,14 @@
 							</section>
 						</form>
 
+
             <br>
             <section class="input-group">
               <span class="input-group-addon">
                 <i class="fa fa-user fa-fw">
                 </i>
               </span>
-            <input type="text"  id="idNombres" class="form-control" placeholder="Nombres">
+            <input type="text"  id="idUsuario" class="form-control" placeholder="Usuario">
           </section>
           <br>
 
@@ -115,6 +127,8 @@
             <br>
           </section>
           <br>
+
+
 
             <input type="submit" value="REGISTRAR" id="btnRegistrar" class="boton_azul" >
             <br><br>
