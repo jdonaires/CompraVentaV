@@ -1,0 +1,50 @@
+.egt{
+  text-align:center;
+}
+table{
+  text-align:center;
+}
+.bordeado{
+  background: rgba(128, 255, 0, 0.3);
+  border: 1px solid rgba(100, 200, 0, 0.3);
+}
+body{
+background: url(../Imagenes/fondazo.jpg);
+  position: absolute;
+  top:  120px;
+  left: 100px;
+}
+
+input {
+    border: 0;
+    background-color:transparent;
+
+}
+
+.encabezado{
+  background: rgba(128, 255, 0, 0.3);
+  border: 1px solid rgba(100, 200, 0, 0.3);"
+}
+
+.Coloreado{
+  background: rgba(128, 255, 0, 0.3);
+  border: 1px solid rgba(100, 200, 0, 0.3);"
+}
+
+caption{
+
+-webkit-text-fill-color: #EDF727;
+-webkit-text-stroke: 3px #375AE8;
+  font-family: cursive;
+  font-size: 50;
+}
+
+.GRACIAS{
+    font-size: 50;
+    background: #F49455;
+    border: 1px solid rgba(100, 200, 0, 0.3);"
+}
+.Sombreados{
+    background: rgba(128, 255, 0, 0.3);
+    border: 1px solid rgba(100, 200, 0, 0.3);"
+}
