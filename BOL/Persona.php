@@ -5,9 +5,10 @@ class Persona
 	private $nombres;
 	private $apellidos;
 	private $correo;
-	private $sexo;
-	private $fecha_nacimiento;
 	private $dni;
+	private $telefono;
+	private $fecnac;
+	private $sexo;
 
 	public function __GET($x)
 	{
