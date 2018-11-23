@@ -55,7 +55,7 @@ if(isset($_REQUEST['registrar']))
 							<br>
 							<h3 class="letras" >TOMASSA ELECTRIC</h3>
 						</section>
-						<h3 class="letras">Registro</h3>
+						<h3 class="letras">Registro Empleado</h3>
             <form action="?action=registrar" method="post" class="pure-form pure-form-stacked" style="margin-bottom:30px;">
 						<form id="frm" class="form-horizontal" enctype="multipart/form-data">
 							<section class="input-group">
