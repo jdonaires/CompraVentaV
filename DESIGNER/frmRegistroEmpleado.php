@@ -1,3 +1,29 @@
+<?php
+require_once ('../DAO/Ingresar_empleado.php');
+require_once ('../BOL/login.php');
+require_once('../BOL/persona.php');
+
+$per = new Persona();
+$log = new Login();
+$model = new Registrar_empleado();
+
+if(isset($_REQUEST['registrar']))
+{
+			$per->__SET('nombres',          $_POST['nombres']);
+      $per->__SET('apellidos',        $_POST['apellidos']);
+      $per->__SET('correo',           $_POST['correo']);
+      $per->__SET('dni',           $_POST['dni']);
+      $per->__SET('telefono',           $_POST['telefono']);
+      $per->__SET('fecnac',           $_POST['fecnac']);
+      $per->__SET('sexo',           $_POST['sexo']);
+      $log->__SET('usuario',           $_POST['usuario']);
+      $log->__SET('clave',           $_POST['clave']);
+			$model->registrar($per,$log);
+}else if (isset($_REQUEST['cancelar'])) {
+  header('location:frmprincipal.php');
+}
+
+ ?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -30,13 +56,14 @@
 							<h3 class="letras" >TOMASSA ELECTRIC</h3>
 						</section>
 						<h3 class="letras">Registro</h3>
+            <form action="?action=registrar" method="post" class="pure-form pure-form-stacked" style="margin-bottom:30px;">
 						<form id="frm" class="form-horizontal" enctype="multipart/form-data">
 							<section class="input-group">
 								<span class="input-group-addon">
 									<i class="fa fa-user fa-fw">
 									</i>
 								</span>
-							<input type="text"  id="idNombres" class="form-control" placeholder="Nombres">
+							<input type="text"  name="nombres" class="form-control" placeholder="Nombres">
 							<br>
 							</section>
               <br>
@@ -45,25 +72,24 @@
 									<i class="fa fa-user fa-fw">
 									</i>
 								</span>
-							<input type="text"  id="idApellidos" class="form-control" placeholder="Apellidos">
+							<input type="text"  name="apellidos" class="form-control" placeholder="Apellidos">
 							<br>
 							</section>
               <br>
               <section class="input-group">
-								<span class="input-group-addon">
-									<i class="fa fa-map-o">
-									</i>
-								</span>
-							<input type="text"  id="idDireccion" class="form-control" placeholder="Direccion">
-							<br>
-							</section>
-              <br>
+                <span class="input-group-addon">
+                  <i class="fa fa-user fa-fw">
+                  </i>
+                </span>
+              <input type="text"  name="correo" class="form-control" placeholder="Correo">
+            </section>
+            <br>
               <section class="input-group">
 								<span class="input-group-addon">
 									<i class="fa fa-credit-card">
 									</i>
 								</span>
-							<input type="text" id="idDNI" class="form-control" placeholder="DNI">
+							<input type="text" name="dni" class="form-control" placeholder="DNI">
 							<br>
 							</section>
               <br>
@@ -72,40 +98,29 @@
 									<i class="fa fa-phone">
 									</i>
 								</span>
-							<input type="text"  id="idTelefono" class="form-control" placeholder="Telefono">
+							<input type="text"  name="telefono" class="form-control" placeholder="Telefono">
 							<br>
 							</section>
-
               <br>
-              <section class="input-group">
-                <span class="input-group-addon">
-                  <i class="fa fa-user fa-fw">
-                  </i>
-                </span>
-              <input type="text"  id="idcorreo" class="form-control" placeholder="Correo">
-            </section>
-            <br>
+
               <section class="input-group">
 								<span class="input-group-addon">
 									<i class="fa fa-calendar">
 									</i>
 								</span>
-							<input type="date"  id="idFecha" class="form-control" placeholder="Fecha de Nacimiento">
+							<input type="date"  name="fecnac" class="form-control" placeholder="Fecha de Nacimiento">
 							<br>
+              </section>
+	            <br>
 
-              
-							</section>
-              <br>
               <section class="input-group">
-								<span class="input-group-addon">
-									<i class="fa fa-transgender">
-									</i>
-								</span>
-                <input type="radio" name="IdSexo" value="1">Masculino
-                <input type="radio" name="IdSexo" value="2">Femenino
-                <input type="radio" name="IdSexo" value="3" checked>Sin Especificar
-							</section>
-						</form>
+                <span class="input-group-addon">
+                  <i class="fa fa-user fa-fw">
+                  </i>
+                </span>
+              <input type="text"  name="sexo" class="form-control" placeholder="Sexo">
+            </section>
+
 
 
             <br>
@@ -114,7 +129,7 @@
                 <i class="fa fa-user fa-fw">
                 </i>
               </span>
-            <input type="text"  id="idUsuario" class="form-control" placeholder="Usuario">
+            <input type="text"  name="usuario" class="form-control" placeholder="Usuario">
           </section>
           <br>
 
@@ -130,16 +145,15 @@
 
 
 
-            <input type="submit" value="REGISTRAR" id="btnRegistrar" class="boton_azul" >
+            	<input type="submit" value="Registrar" name="registrar" class="boton_azul" >
             <br><br>
-            <form action="frmUsuarioEmpleado.php">
-             <input type="submit" value="CANCELAR"  class="boton_azul" id="btnCancelar" >
-           </form>
+             <input type="submit" value="cancelar" name="cancelar" class="boton_azul" >
 					</section>
 				</section>
 			</section>
 		</main>
-
+  </form>
+  </form>
 
 
 	</body>

@@ -73,7 +73,8 @@ if(isset($_POST['ingresar']))
 								<input type="password" name="clave" class="form-control"  placeholder="Clave">
 							</section>
 							<br>
-							<input type="submit" value="INICIAR SESION" name="ingresar" class="boton_1" ></a>
+
+						    <input type="submit" value="INICIAR SESION" name="ingresar" class="boton_azul" >  </a>
 						</form>
             </form>
 					</section>
