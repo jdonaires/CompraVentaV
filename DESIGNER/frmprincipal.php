@@ -18,6 +18,7 @@
         <li><a href="#"><img src="Imagenes/compras.png"  width=30% height=30%   >Compras</a></li>
         <li><a href="frmAlmacen.php"><img src="Imagenes/warehouse.png"  width=30% height=30%   >Almacen</a></li>
         <li><a href="frmLogin.php"><img src="Imagenes/salir.png"  width=30% height=30%   >Cerrar Sesión</a></li>
+        <li><a href="frmListaEmpleado.php"><img src="Imagenes/empleado.png"  width=30% height=30%   >Lista Empleados</a></li>
     </ul>
   </div>
 
