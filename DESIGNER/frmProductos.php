@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Registro Empleado</title>
+		<title>Registro Producto</title>
     <link rel="stylesheet" type="text/css" href="Style/bootstrap.min.css">
 		<link rel="shortcut icon" href="imagenes/logo.png"/>
     <link rel="stylesheet" type="text/css" href="Style/style_sige.css">
@@ -97,13 +97,55 @@
             	<input type="submit" value="Registrar" name="registrar" class="boton_azul" >
             <br><br>
              <input type="submit" value="cancelar" name="cancelar" class="boton_azul" >
+              <input type="submit" value="buscar" name="buscar" class="boton_azul" >
 					</section>
 				</section>
 			</section>
 		</main>
   </form>
   </form>
+  <?php
+if(isset($_POST['buscar']))
+{
+	$resultado = array();//VARIABLE TIPO RESULTADO
+	$pro->__SET('nonbres',          $_POST['nombres']);//ESTABLECEMOS EL VALOR DEL DNI
+	$resultado = $model->Listar($pro); //CARGAMOS LOS REGISTRO EN EL ARRAY RESULTADO
+	if(!empty($resultado)) //PREGUNTAMOS SI NO ESTA VACIO EL ARRAY
+	{
+		?>
+		<table class="pure-table pure-table-horizontal">
+				<thead>
+						<tr>
 
+								<th style="text-align:left;">Nombres</th>
+								<th style="text-align:left;">Marcas</th>
+								<th style="text-align:left;">Precio</th>
+								<th style="text-align:left;">Stock</th>
+
+
+						</tr>
+				</thead>
+		<?php
+		foreach( $resultado as $r): //RECORREMOS EL ARRAY RESULTADO A TRAVES DE SUS CAMPOS
+			?>
+				<tr>
+
+						<td><?php echo $r->__GET('nombres'); ?></td>
+						<td><?php echo $r->__GET('precio'); ?></td>
+						<td><?php echo $r->__GET('stock'); ?></td>
+
+				</tr>
+		<?php endforeach;
+	}
+	else
+	{
+		echo 'no se encuentra en la base de datos!';
+	}
+	?>
+	</table>
+	<?php
+}
+?>
 
 	</body>
 </html>
