@@ -2,11 +2,10 @@
 class Productos
 {
 	private $idProductos;
-	private $Nombres;
-	private $Descripcion;
-	private $Precio;
-	private $Color;
-	private $Stock;
+	private $nombres;
+	private $precio;
+	private $color;
+	private $stock;
 	private $idMarcas;
 	private $idCategorias;
 
