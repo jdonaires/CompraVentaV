@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="Style/StyleVentas.css">
 </head>
   <body>
+    <FONT class="iniciox_ventas" SIZE="3">INICIO</FONT>
     <form class="posicion_Ventas_1">
     <label name="hola">ADMIN</label>
     <img src="imagenes/ejecutivo1.png" width="30" height="30"/>
@@ -37,8 +38,10 @@
       <h4>Cantidad: </h4>
       <input  type="text" name="cantidad" size="10%" >
       <input  type=image  src="Imagenes\logo.png" width="10%" height="10%" >
+      <form action="frmprincipal.php">
       <input class="btn_inicio" type=image src="Imagenes\castverde.png" width="100"
           height="100">
+        </form>
     </div>
 
     <fieldset class="posicion_Ventas_4">

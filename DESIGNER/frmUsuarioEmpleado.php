@@ -10,7 +10,7 @@
  <FONT class="iniciox" SIZE="3">INICIO</FONT>
   <div class="General">
     <form action="frmprincipal.php">
-       <input class="btn_inicio" type=image id="uno" src="Imagenes\castverde.png" width="100"
+       <input class="btn_inicio_UsuarioEmple" type=image id="uno" src="Imagenes\castverde.png" width="100"
            height="100" value="ir a la pagina de destino">
     </form>
 

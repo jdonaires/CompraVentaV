@@ -20,11 +20,45 @@
   top:  -100px;
   left: 550px;
 }
+.btn_inicio_UsuarioEmple{
+  position: absolute;
+  top:  -200px;
+  left: 850px;
+}
+
 .iniciox{
   position: absolute;
-  top:  17%;
+  top:  12%;
   left:94.5%;
 }
+
+.iniciox_ventas{
+  position: absolute;
+  top:  12%;
+  left:93.5%;
+}
+.iniciox_Almacen{
+  position: absolute;
+  top:  -60%;
+  left: 1380%;
+}
+.btn_inicio_almacen{
+  position: absolute;
+  top:  -170%;
+  left:1350%;
+}
+
+.iniciox_Almacen_emple{
+  position: absolute;
+  top:  -70%;
+  left: 654%;
+}
+.btn_inicio_almacen_emple{
+  position: absolute;
+  top:  -170%;
+  left:640%;
+}
+
 
 .General{
      	position: absolute;
