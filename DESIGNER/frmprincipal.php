@@ -14,12 +14,13 @@
     <ul class="menu">
         <li><a href="#" >  Inicio</a></li>
         <li><a href="frmRegistroEmpleado.php"> <img src="Imagenes/ejecutivo1.png"  width=30% height=30%  >Registro</a></li>
-        <li><a href="frmVentass.php"><img src="Imagenes/logo.png"  width=30% height=30%  > Ventas</a></li>
+        <li><a href="Ventass.php"><img src="Imagenes/logo.png"  width=30% height=30%  > Ventas</a></li>
         <li><a href="#"><img src="Imagenes/compras.png"  width=30% height=30%   >Compras</a></li>
         <li><a href="frmAlmacen.php"><img src="Imagenes/warehouse.png"  width=30% height=30%   >Almacen</a></li>
         <li><a href="frmLogin.php"><img src="Imagenes/salir.png"  width=30% height=30%   >Cerrar Sesión</a></li>
     </ul>
   </div>
+
 
   <div class="posicion_1" id="contenido" style="margin-left: 0px;">
       <p><a target="_blank">
@@ -29,3 +30,6 @@
       <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()" style="display: inline;">BIENVENIDO-INGRESAR AL MENU</a>
       <a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()" style="display: none;">Cierra el menu</a>
   </div>
+  <form class="posicion_principal">
+  <label name="hola">ADMIN</label>
+  <img src="imagenes/ejecutivo1.png" width="30" height="30"/>
