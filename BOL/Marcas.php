@@ -1,8 +1,8 @@
 <?php
 class Marcas
 {
-	private $idMarcas;
-	private $Descripcion;
+	private $id_Marcas;
+	private $marca;
 
 	public function __GET($x)
 	{
