@@ -13,7 +13,7 @@
 
     <ul class="menu">
         <li><a href="#" >  Inicio</a></li>
-        <li><a href="frmRegistroEmpleado.php"> <img src="Imagenes/ejecutivo1.png"  width=30% height=30%  >Registro</a></li>
+        <li><a href="frmUsuarioEmpleado.php"> <img src="Imagenes/ejecutivo1.png"  width=30% height=30%  >Registro</a></li>
         <li><a href="Ventass.php"><img src="Imagenes/logo.png"  width=30% height=30%  > Ventas</a></li>
         <li><a href="#"><img src="Imagenes/compras.png"  width=30% height=30%   >Compras</a></li>
         <li><a href="frmAlmacen.php"><img src="Imagenes/warehouse.png"  width=30% height=30%   >Almacen</a></li>

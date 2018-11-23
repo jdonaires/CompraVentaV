@@ -14,8 +14,8 @@
            height="100" value="ir a la pagina de destino">
     </form>
 
-	   <form id="RedireccionUno" action="frmRegistroLogin.php">
-		     <input type=image id="uno" src="Imagenes\ejecutivo1.png" width="250"
+	   <form id="RedireccionUno" action="frmProductos.php">
+		     <input type=image id="uno" src="Imagenes\productos.png" width="250"
 			       height="250" value="ir a la pagina de destino">
 		      <table border="0" cellpadding="0" cellspacing="5">
               <tr>

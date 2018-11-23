@@ -1,3 +1,22 @@
+<?php
+require_once ('../DAO/Ingresar_empleado.php');
+require_once ('../BOL/Productos.php');
+
+
+$per = new Persona();
+$log = new Login();
+$model = new Registrar_empleado();
+
+if(isset($_REQUEST['registrar']))
+{
+	
+
+}else if (isset($_REQUEST['cancelar'])) {
+  header('location:frmUsuarioEmpleado.php');
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="es">
   <head>

@@ -20,7 +20,7 @@ if(isset($_REQUEST['registrar']))
       $log->__SET('clave',           $_POST['clave']);
 			$model->registrar($per,$log);
 }else if (isset($_REQUEST['cancelar'])) {
-  header('location:frmprincipal.php');
+  header('location:frmUsuarioEmpleado.php');
 }
 
  ?>
