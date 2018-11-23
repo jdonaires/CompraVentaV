@@ -3,6 +3,7 @@
   top:  100px;
   left: 460px;
 }
+
 .stiloEmpleado{
   position: absolute;
   top:  260px;
@@ -31,4 +32,24 @@
     	top: 50%;
     	transform: translate(-50%, -50%);
     	-webkit-transform: translate(-50%, -50%);
+}
+.posicion_Ventas_1{
+  position: absolute;
+  top:  50px;
+  left: 100px;
+}
+.posicion_Ventas_2{
+  position: absolute;
+  top:  100px;
+  left: 200px;
+}
+.posicion_Ventas_3{
+  position: absolute;
+  top:  100px;
+  left: 700px;
+}
+.posicion_Ventas_4{
+  position: absolute;
+  top:  60%;
+  left: 13%;
 }
