@@ -2,12 +2,12 @@
 class Productos
 {
 	private $idProductos;
-	private $nombres;
+	private $nombre;
 	private $precio;
 	private $color;
 	private $stock;
-	private $idMarcas;
-	private $idCategorias;
+	private $id_marca;
+	private $id_categoria;
 
 
 	public function __GET($x)
