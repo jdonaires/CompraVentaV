@@ -53,3 +53,8 @@
   top:  60%;
   left: 13%;
 }
+.posicion_principal{
+  position: absolute;
+  top:  10%;
+  left: 80%;
+}
