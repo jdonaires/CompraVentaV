@@ -31,7 +31,7 @@
 	        <table border="0" cellpadding="0" cellspacing="5">
               <tr>
                  	<td valign="top"></td>
-                 	<td class="stiloUsuario"><FONT SIZE="9">USUARIO</FONT></td>
+                 	<td class="stiloUsuario"><FONT SIZE="9">PRODUCTOS</FONT></td>
               </tr>
 
 	</form>
