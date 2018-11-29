@@ -20,7 +20,7 @@
 		      <table border="0" cellpadding="0" cellspacing="5">
               <tr>
 
-                 	<td class="stiloEmpleado"><FONT SIZE="9">EMPLEADO</FONT></td>
+                 	<td class="stiloEmpleado" style="margin-left: 18px"><FONT SIZE="9">EMPLEADO</FONT></td>
               </tr>
 
 	   </form>
@@ -28,10 +28,10 @@
 	  <form id="RedireccionDos"action="frmRegistroEmpleado.php">
 		    <input type=image id="dos" src="Imagenes\usuario.png" width="250"
 			       height="250" value="ir a la pagina de destino" style="margin-left: 30px">
-	        <table border="0" cellpadding="0" cellspacing="5">
+	        <table border="0" cellpadding="0" cellspacing="5" >
               <tr>
                  	<td valign="top"></td>
-                 	<td class="stiloUsuario"><FONT SIZE="9">PRODUCTOS</FONT></td>
+                 	<td class="stiloUsuario" style="margin-left: -18px"><FONT SIZE="9">PRODUCTOS</FONT></td>
               </tr>
 
 	</form>
