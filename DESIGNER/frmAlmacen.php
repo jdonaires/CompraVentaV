@@ -28,6 +28,9 @@ $al = new Almacen();
             <thead>
                 <tr>
                     <th style="text-align:left;">Nombre</th>
+                    <th style="text-align:left;">Precio</th>
+                    <th style="text-align:left;">Color</th>
+                    <th style="text-align:left;">Stock</th>
                     <th style="text-align:left;">marca</th>
                     <th style="text-align:left;">categoria</th>
                 </tr>
@@ -38,10 +41,16 @@ $al = new Almacen();
           ?>
             <tr>
                 <td><?php echo $r->__GET('nombre'); ?></td>
+                <td><?php echo $r->__GET('precio'); ?></td>
+                <td><?php echo $r->__GET('color'); ?></td>
+                <td><?php echo $r->__GET('stock'); ?></td>
                 <td><?php echo $r->__GET('marca'); ?></td>
                 <td><?php echo $r->__GET('categoria'); ?></td>
             </tr>
             <?php $_SESSION['nombre']= $r->__GET('nombre'); ?>
+            <?php $_SESSION['precio']= $r->__GET('precio'); ?>
+            <?php $_SESSION['color']= $r->__GET('color'); ?>
+            <?php $_SESSION['stock']= $r->__GET('stock'); ?>
             <?php $_SESSION['marca']= $r->__GET('marca'); ?>
             <?php $_SESSION['categoria']= $r->__GET('categoria'); ?>
             <?php endforeach;

@@ -28,12 +28,12 @@ class Almacen
 				$pro = new Productos();
 
 				$pro->__SET('nombre', $r->nombre);
+				$pro->__SET('precio', $r->precio);
+				$pro->__SET('color', $r->color);
+				$pro->__SET('stock', $r->stock);
 				$pro->__SET('marca', $r->marca);
 				$pro->__SET('categoria',$r->tipo);
-        //$pro->__SET('color', $r->color);
-        //$pro->__SET('stock', $r->stock);
-        //$mar->__SET('descripcion', $r->marcas);
-        //$ca->__SET('descripcion', $r->categorias);
+
 
 				$result[] = $pro;
 			}
