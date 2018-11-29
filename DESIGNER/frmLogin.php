@@ -59,7 +59,7 @@ if(isset($_POST['ingresar']))
 							<h3 class="letras" >TOMASSA ELECTRIC</h3>
 						</section>
 						<img src="imagenes/logo.png" width="150" height="150"/>
-						<h3 class="letras">INISIAR SESIÓN</h3>
+						<h3 class="letras">INGRESE USUARIO</h3>
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post" class="pure-form pure-form-stacked" style="margin-bottom:30px;">
 						<form id="frm" class="form-horizontal" enctype="multipart/form-data">
 							<section class="input-group">
