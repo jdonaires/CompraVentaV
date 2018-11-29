@@ -1,3 +1,7 @@
+<?php
+
+
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -32,5 +36,5 @@
       <a id="cerrar" class="abrir-cerrar" href="#" onclick="ocultar()" style="display: none;">Cierra el menu</a>
   </div>
   <form class="posicion_principal">
-  <label name="hola">ADMIN</label>
+  <label name="hola"><?php session_start(); echo $_SESSION['apellidos_y_nombres']; ?></label>
   <img src="imagenes/ejecutivo1.png" width="30" height="30"/>

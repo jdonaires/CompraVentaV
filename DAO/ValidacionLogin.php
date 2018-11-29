@@ -33,9 +33,11 @@ class Loginingresar
 				$per->__SET('nombres', $r->apellidos_nombres);
 
 				$result[] = $per;
+
 			}
 
 			return $result;
+
 
 
 		} catch (Exception $e)

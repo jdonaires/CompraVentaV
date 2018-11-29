@@ -15,7 +15,12 @@ if(isset($_POST['ingresar']))
   $resultado = $perLogin->Acceder($log); //CARGAMOS LOS REGISTRO EN EL ARRAY RESULTADO
   if(!empty($resultado)) //PREGUNTAMOS SI NO ESTA VACIO EL ARRAY
   {
-      header('location:frmprincipal.php');
+    session_start();
+    foreach( $resultado as $r): //RECORREMOS EL ARRAY RESULTADO A TRAVES DE SUS CAMPOS
+    $_SESSION['dni']= $r->__GET('dni');
+    $_SESSION['apellidos_y_nombres']= $r->__GET('nombres');
+    header('location:frmprincipal.php');
+    endforeach;
   }else{
     header('location:frmLogin.php');
   }
