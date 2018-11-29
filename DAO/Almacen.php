@@ -1,6 +1,7 @@
 <?php
 require_once('../DAL/DBAccess.php');
 require_once('../BOL/Productos.php');
+require_once('../BOL/Categorias.php');
 require_once('../BOL/Marcas.php');
 
 class Almacen
@@ -25,10 +26,10 @@ class Almacen
 			foreach($statement->fetchAll(PDO::FETCH_OBJ) as $r)
 			{
 				$pro = new Productos();
-        //$ca = new Categorias();
 
 				$pro->__SET('nombre', $r->nombre);
 				$pro->__SET('marca', $r->marca);
+				$pro->__SET('categoria',$r->tipo);
         //$pro->__SET('color', $r->color);
         //$pro->__SET('stock', $r->stock);
         //$mar->__SET('descripcion', $r->marcas);

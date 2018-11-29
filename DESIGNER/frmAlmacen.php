@@ -35,6 +35,7 @@ $al = new Almacen();
                 <tr>
                     <th style="text-align:left;">Nombre</th>
                     <th style="text-align:left;">marca</th>
+                    <th style="text-align:left;">categoria</th>
                 </tr>
             </thead>
         <?php
@@ -44,9 +45,11 @@ $al = new Almacen();
             <tr>
                 <td><?php echo $r->__GET('nombre'); ?></td>
                 <td><?php echo $r->__GET('marca'); ?></td>
+                <td><?php echo $r->__GET('categoria'); ?></td>
             </tr>
             <?php $_SESSION['nombre']= $r->__GET('nombre'); ?>
             <?php $_SESSION['marca']= $r->__GET('marca'); ?>
+            <?php $_SESSION['categoria']= $r->__GET('categoria'); ?>
             <?php endforeach;
       }
       else
