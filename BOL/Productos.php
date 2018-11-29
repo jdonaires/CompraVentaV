@@ -6,8 +6,8 @@ class Productos
 	private $precio;
 	private $color;
 	private $stock;
-	private $id_marca;
-	private $id_categoria;
+	private $marca;
+	private $categoria;
 
 
 	public function __GET($x)
