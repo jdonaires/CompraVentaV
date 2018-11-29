@@ -1,15 +1,19 @@
 <?php
-require_once ('../DAO/Ingresar_empleado.php');
+require_once ('../DAO/Registro_producto.php');
 require_once ('../BOL/Productos.php');
 
-
-$per = new Persona();
-$log = new Login();
-$model = new Registrar_empleado();
+$pro = new Productos();
+$model = new Registrar_producto();
 
 if(isset($_REQUEST['registrar']))
 {
-	
+  $pro->__SET('nombre',          $_POST['nombre']);
+  $pro->__SET('precio',        $_POST['precio']);
+  $pro->__SET('color',           $_POST['color']);
+  $pro->__SET('stock',           $_POST['stock']);
+  $pro->__SET('marca',           $_POST['marca']);
+  $pro->__SET('categoria',           $_POST['categoria']);
+  $model->registrar($pro);
 
 }else if (isset($_REQUEST['cancelar'])) {
   header('location:frmUsuarioEmpleado.php');
@@ -56,16 +60,7 @@ if(isset($_REQUEST['registrar']))
 									<i class="fa fa-laptop">
 									</i>
 								</span>
-							<input type="text"  name="nombres" class="form-control" placeholder="Nombres">
-							<br>
-							</section>
-              <br>
-              <section class="input-group">
-								<span class="input-group-addon">
-									<i class="fa fa-user fa-fw">
-									</i>
-								</span>
-							<input type="text"  name="descripcion" class="form-control" placeholder="Descripcion">
+							<input type="text"  name="nombre" class="form-control" placeholder="Nombres">
 							<br>
 							</section>
               <br>
@@ -116,55 +111,11 @@ if(isset($_REQUEST['registrar']))
             	<input type="submit" value="Registrar" name="registrar" class="boton_azul" >
             <br><br>
              <input type="submit" value="cancelar" name="cancelar" class="boton_azul" >
-              <input type="submit" value="buscar" name="buscar" class="boton_azul" >
 					</section>
 				</section>
 			</section>
 		</main>
   </form>
   </form>
-  <?php
-if(isset($_POST['buscar']))
-{
-	$resultado = array();//VARIABLE TIPO RESULTADO
-	$pro->__SET('nonbres',          $_POST['nombres']);//ESTABLECEMOS EL VALOR DEL DNI
-	$resultado = $model->Listar($pro); //CARGAMOS LOS REGISTRO EN EL ARRAY RESULTADO
-	if(!empty($resultado)) //PREGUNTAMOS SI NO ESTA VACIO EL ARRAY
-	{
-		?>
-		<table class="pure-table pure-table-horizontal">
-				<thead>
-						<tr>
-
-								<th style="text-align:left;">Nombres</th>
-								<th style="text-align:left;">Marcas</th>
-								<th style="text-align:left;">Precio</th>
-								<th style="text-align:left;">Stock</th>
-
-
-						</tr>
-				</thead>
-		<?php
-		foreach( $resultado as $r): //RECORREMOS EL ARRAY RESULTADO A TRAVES DE SUS CAMPOS
-			?>
-				<tr>
-
-						<td><?php echo $r->__GET('nombres'); ?></td>
-						<td><?php echo $r->__GET('precio'); ?></td>
-						<td><?php echo $r->__GET('stock'); ?></td>
-
-				</tr>
-		<?php endforeach;
-	}
-	else
-	{
-		echo 'no se encuentra en la base de datos!';
-	}
-	?>
-	</table>
-	<?php
-}
-?>
-
 	</body>
 </html>
