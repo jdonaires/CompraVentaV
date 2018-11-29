@@ -31,7 +31,7 @@
       <h4>Nombre</h4>
       <input  type="text" name="nombre" size="20%"/>
       <input  type=image  src="Imagenes\lupa.png" width="30%" height="10%" >
-      <h4>Descripcion: </h4>
+      <h4>Marca: </h4>
       <input  type="text" disabled="false"  name="descripcion" size="50%" >
       <h4>Precio: </h4>
       <input  type="text" disabled="false" name="precio" size="50%" >

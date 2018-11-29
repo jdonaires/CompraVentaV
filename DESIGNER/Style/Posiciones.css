@@ -39,13 +39,17 @@
 }
 .iniciox_Almacen{
   position: absolute;
-  top:  -60%;
-  left: 1380%;
+  top:  -20%;
+  left: 307%;
 }
 .btn_inicio_almacen{
   position: absolute;
-  top:  -170%;
-  left:1350%;
+  left:auto%;
+}
+.btn_inicio_Lista{
+  position: absolute;
+
+  left:auto;
 }
 
 .iniciox_Almacen_emple{
